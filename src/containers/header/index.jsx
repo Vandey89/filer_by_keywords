@@ -4,12 +4,16 @@ import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import IconButton from "@mui/material/IconButton";
 import SearchIcon from '@mui/icons-material/Search';
+import Moment from 'react-moment';
 
 
 
 export default function Header () {
     return (
       <HeaderMain>
+        <Moment date="Tuesday Feb 24 2022 12:59:00 GMT-0500"
+                    durationFromNow
+            />
         <div className="orb">
             <div className="header">
                   <div className="filter"> 

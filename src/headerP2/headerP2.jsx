@@ -11,7 +11,9 @@ export default function DenseAppBar() {
   <div className="ORB">
       <HeaderP2Foto>
             <BodyPage2> 
-              <div className="BodyPage2Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugiat
+              <div className="BodyPage2Text">
+                      <div className="titleP2">Lorem ipsum dolor sit amet.</div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugiat
                doloremque velit necessitatibus! Sed, perferendis minus culpa aut, asperiores ex quisquam sint eum 
                temporibus eaque provident quidem similique ducimus nesciunt, quibusdam aliquid incidunt ipsam. Facere
                 dolore corrupti nulla? Deleniti voluptatum magni sapiente at non quisquam placeat officia minus 
@@ -35,15 +37,15 @@ export default function DenseAppBar() {
                  sit accusantium suscipit velit exercitationem, mollitia cumque cupiditate illum at animi sed 
                  adipisci officiis, iusto est distinctio. Quam omnis explicabo aliquam aspernatur esse tenetur 
                  harum hic, cum, debitis error possimus, maxime ex officiis est voluptate minima vero at magnam atque?</div>
-                  <StyledButton>
-                    <Button variant="contained" >
-                        Back to start
-                    </Button>
-                    </StyledButton>
+                  
             </BodyPage2>     
         <img src={flag} height="245px" width="100%" />
       </HeaderP2Foto>
-  
+      <StyledButton>
+          <Button variant="contained" >
+                Back to start
+          </Button>
+       </StyledButton>
   </div>
   
 

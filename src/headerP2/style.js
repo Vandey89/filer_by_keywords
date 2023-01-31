@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import styled from "styled-components";
 
 
@@ -30,11 +29,19 @@ export const BodyPage2 = styled.div`
         line-height: 170%;
         color: #000000;
     }
+    .titleP2{
+        position: absolute;
+        width: 473px;
+        height: 29px;
+        left: 330px;
+        top: -80px;
+        font-size: 24px;
+    }
 `;
 export const StyledButton = styled.div`
        position: absolute;
         width: 160px;
         height: 24px;
         left: 118px;
-        top: 830px;
-`
+        top: 1050px;
+`;
