@@ -4,6 +4,7 @@ import  ProductFoto2  from "../../public/icon/image-1.png";
 
 
 export const Product = styled.div`
+      font-family: 'Montserrat';
     .orb{
       display: grid;
       padding: 45px 75px 63px;
@@ -15,13 +16,11 @@ export const Product = styled.div`
       width: 1290px;
       height: 1105px;
       grid-gap: 45px;
-      font-family: 'Montserrat';
       border: 1px solid #EAEAEA;
       box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
       border-radius: 5px; 
     }
     .date{
-      font-family: 'Montserrat';
       line-height: 150%;
       opacity: 0.6;
       padding: 30px 0.1px;

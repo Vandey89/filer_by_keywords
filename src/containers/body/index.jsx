@@ -2,6 +2,8 @@ import React from "react";
 import { Product } from "./style";
 import {Card, CardContent, CardMedia, Typography, Button, CardActionArea, CardActions} from '@mui/material';
 import tablo from '../../public/icon/calendar.svg';
+import { cardsInfo } from "./cards/cardsInfo";
+import serceSherst from '../../public/icon/serdceSherst.jpg' 
 
 
 
@@ -21,8 +23,8 @@ return(
         <CardMedia
           component="img"
           height="247"
-          image="https://cheline.com.ua/wp-content/uploads/2017/02/de31be7d9daa9752a08893a1a53a23f8-e1487410377853.jpg" onClick={zsu}
-          alt="green iguana"
+          image={serceSherst} onClick={zsu}
+          alt="Ups...."
         />
         <CardContent>
           <div className="date">

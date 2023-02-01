@@ -12,8 +12,7 @@ export default function Header () {
     return (
       <HeaderMain>
         <Moment date="Tuesday Feb 24 2022 12:59:00 GMT-0500"
-                    durationFromNow
-            />
+                    durationFromNow />
         <div className="orb">
             <div className="header">
                   <div className="filter"> 
