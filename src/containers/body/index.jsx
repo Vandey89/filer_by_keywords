@@ -2,16 +2,16 @@ import React from "react";
 import { Product } from "./style";
 import {Card, CardContent, CardMedia, Typography, Button, CardActionArea, CardActions} from '@mui/material';
 import tablo from '../../public/icon/calendar.svg';
-import { cardsInfo } from "./cards/cardsInfo";
-import serceSherst from '../../public/icon/serdceSherst.jpg' 
+import { Cards } from "./cards/cardsInfo";
 
 
 
 
-const Cards = [1,2,3,4,5,6];
+
+
 
 export default function ProductBody(){
-    const zsu = () => [alert("Did you help ZSU with a coin?!"), alert("Or are you not love zsu???!!!!😡😡😡😡😡")] ;
+   const zsu = () => [alert("Did you help ZSU with a coin?!"), alert("Or are you not love zsu???!!!!😡😡😡😡😡")] ;
 return(
     <Product>
       <div className="orb">
@@ -23,18 +23,19 @@ return(
         <CardMedia
           component="img"
           height="247"
-          image={serceSherst} onClick={zsu}
+          image={card.img} onClick={zsu}
           alt="Ups...."
         />
         <CardContent>
           <div className="date">
-            <img src={tablo} width="12px"/> June 29th 2021
+            <img src={tablo} width="12px"/> 
+            {card.date}
           </div>
           <Typography gutterBottom variant="h5" component="div">
-            War in Ukraine
+            {card.name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Russia has been waging war on Ukraine since late February 2022. Millions have fled the country, while others stayed to fight....
+            {card.Typography1}
           </Typography>
         </CardContent>
       </CardActionArea>

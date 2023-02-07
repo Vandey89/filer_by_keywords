@@ -1,59 +1,61 @@
-import patrioti from '../../../public/icon/patrioti.jpg'
-import imgFlag1 from '../../../public/icon/babo4ka.jpg'
-import serceSherst from '../../../public/icon/serdceSherst.jpg' 
+import Harkiv from '../../../public/icon/Harkiv.png';
+import Kiev from '../../../public/icon/Kiev.png';
+import Summi from '../../../public/icon/Summi.png';
+import Oxtirka from '../../../public/icon/Oxtirka.png';  
+import Sever from '../../../public/icon/Sever.png';
+import Liman from '../../../public/icon/Liman.png' ;  
 
-export const cardsInfo = [{
+export const Cards = [{
     id: 1,
-    image: imgFlag1 ,
-    name: "The tragedy of Ukraine",
-    date: '3rd March 2022',
-    TypographyTitle: 'The tragedy of Ukraine ',
-    TypographyText: 'The full-scale invasion of Ukraine is less than a week old and most of us have watched in horror as Russian tanks rolled into a sovereign country ....',
-    button:  "https://www.peacedirect.org/tragedy-ukraine-urgency-peacebuilding/?gclid=CjwKCAiAleOeBhBdEiwAfgmXf2lV_-3aJK6i55w9yPsnUZK1lX_msr5GqsD_mq8J-pe0BqbeocMilxoCKBcQAvD_BwE"
-},
-{
+    img: Kiev ,
+    name: "Battle for Kyiv",
+    date: 'February 25, 2022 - April 2, 2022',
+    Typography1: "Kyiv, where the Ukrainian authorities are located, was the main target. An attempt to capture Kyiv ended in defeat and the retreat of Russian troops....",
+    Typography2: "",
+    knopka:  "https://www.peacedirect.org/tragedy-ukraine-urgency-peacebuilding/?gclid=CjwKCAiAleOeBhBdEiwAfgmXf2lV_-3aJK6i55w9yPsnUZK1lX_msr5GqsD_mq8J-pe0BqbeocMilxoCKBcQAvD_BwE"
+  },
+  {
     id: 2,
-    image: serceSherst ,
-    name: "War in Ukraine",
-    date: 'February 24th 2022',
-    TypographyTitle: 'War in Ukraine',
-    TypographyText: 'Russia has been waging war on Ukraine since late February 2022. Millions have fled the country, while others stayed to fight....',
-    button:  "https://www.dw.com/en/war-in-ukraine/t-60931789"
-},
-{
+    img: Harkiv ,
+    name: "Battle for Kharkov",
+    date: "February 24, 2022 — September 11, 2022",
+    Typography1: 'Russia attacked Kharkov in the early days of the invasion. The population of the region suffered greatly as a result of the attacks.....',
+    Typography2: "",
+    knopka:  "https://www.dw.com/en/war-in-ukraine/t-60931789"
+  },
+  {
     id: 3,
-    image: patrioti  ,
-    name: "3",
-    date: '33',
-    TypographyTitle: '333',
-    TypographyText: '3333',
-    button:  alert="33333"
-},
-{
+    img: Summi  ,
+    name: "Battles for Sumy",
+    date: 'February 24, 2022 — April 6, 2022',
+    Typography1: 'For almost the entire period of ground fighting in the Sumy region, Russian troops were near Sumy, shelling the city and trying to encircle it ...',
+    Typography2: "",
+    knopka:"https://www.dw.com/en/war-in-ukraine/t-60931789"
+  },
+  {
     id: 4,
-    image: serceSherst ,
-    name: "44",
-    date: '444',
-    TypographyTitle: '4444',
-    TypographyText: '444444...',
-    button:  alert="44444"
-},
-{
+    img: Oxtirka ,
+    name: "Battles for Akhtyrka",
+    date: 'February 24, 2022 — March 26, 2022',
+    Typography1: 'The capture of Akhtyrka was very important. In the event of the capture of Akhtyrka, a direct route to Poltava and Mirgorod, Kyiv was opened for Russian troops...',
+    Typography2: "",
+    knopka:  alert="44444"
+  },
+  {
     id: 5,
-    image: serceSherst ,
-    name: "55",
-    date: '555',
-    TypographyTitle: '5555',
-    TypographyText: '55555',
-    button:  alert="55555555"
-},
-{
+    img: Sever ,
+    name: "Battles for Severodonetsk",
+    date: 'March 5, 2022 - June 25, 2022',
+    Typography1: "By May 2022, Severodonetsk and its immediate neighbor, the city of Lysychansk, were the last remaining Ukrainian major strongholds in the Luhansk region",
+    Typography2: "",
+    knopka:  "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%B8_%D0%B7%D0%B0_%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BE%D0%B4%D0%BE%D0%BD%D0%B5%D1%86%D0%BA_(2022)"
+  },
+  {
     id: 6,
-    image: serceSherst ,
-    name: "66",
-    date: '6666',
-    TypographyTitle: '66666',
-    TypographyText: '6666666666led the country, while others stayed to fight....',
-    button:  alert="66666666666"
-}
-];
+    img: Liman ,
+    name: "Battles for Lyman",
+    date: 'May 27, 2022 - October 1, 2022',
+    Typography1: 'As a result of the offensive, the armed forces of the Russian Federation during the fighting damaged or destroyed 80-90% of the buildings of the city...',
+    Typography2: "",
+    knopka:  alert="66666666666"
+  }];
