@@ -38,10 +38,11 @@ return(
             {card.Typography1}
           </Typography>
         </CardContent>
+        
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary" >
-          <a href="https://www.dw.com/en/war-in-ukraine/t-60931789">More info -＞</a>
+          <a href={card.knopka}>More info -＞</a>
         </Button>
       </CardActions>
     </Card>

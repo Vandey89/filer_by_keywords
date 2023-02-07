@@ -23,7 +23,14 @@ export const HeaderMain = styled.header`
         white-space: nowrap;
         grid-row: 1;
     }
-        
+`;
+export const Vremya = styled.div`
+    top: 50px;
+    left: 2500px;
+    height: 0px;
+    position: relative;
+    width: 220px;
+    color: rgba(0,255,0.9)
 `;
 
 
