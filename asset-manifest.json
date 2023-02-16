@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/filer_by_keywords/static/css/main.e6c13ad2.css",
+    "main.js": "/filer_by_keywords/static/js/main.9fb9e2d2.js",
+    "static/media/gifkaFLAG.gif": "/filer_by_keywords/static/media/gifkaFLAG.c0de091d0b09649bef15.gif",
+    "static/media/Kiev.png": "/filer_by_keywords/static/media/Kiev.bba416ffdcb83027edb6.png",
+    "static/media/Oxtirka.png": "/filer_by_keywords/static/media/Oxtirka.f329bdfedba7f22843df.png",
+    "static/media/Sever.png": "/filer_by_keywords/static/media/Sever.db68c8ef23fd440e9186.png",
+    "static/media/flag.jpg": "/filer_by_keywords/static/media/flag.b716a0c09e32430071b1.jpg",
+    "static/media/Liman.png": "/filer_by_keywords/static/media/Liman.180dd829c47537391500.png",
+    "static/media/Harkiv.png": "/filer_by_keywords/static/media/Harkiv.0347903fb79b5a1bd552.png",
+    "static/media/Summi.png": "/filer_by_keywords/static/media/Summi.bc1b430746b1d1bbfb10.png",
+    "static/media/mishka.jpg": "/filer_by_keywords/static/media/mishka.725247058f8a5e473c6d.jpg",
+    "index.html": "/filer_by_keywords/index.html",
+    "static/media/calendar.svg": "/filer_by_keywords/static/media/calendar.3a42a13a2fc584260f63c8581881ef17.svg",
+    "main.e6c13ad2.css.map": "/filer_by_keywords/static/css/main.e6c13ad2.css.map",
+    "main.9fb9e2d2.js.map": "/filer_by_keywords/static/js/main.9fb9e2d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.9fb9e2d2.js"
+  ]
+}
