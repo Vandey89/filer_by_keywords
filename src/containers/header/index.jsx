@@ -14,7 +14,7 @@ export default function Header () {
       <HeaderMain>
         <Vremya> 
         <h2>
-            War begining :
+        Russian invasion of Ukraine continues:
         </h2>
         <h3>
         <Moment  
