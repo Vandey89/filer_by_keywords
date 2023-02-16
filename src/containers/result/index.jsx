@@ -6,7 +6,7 @@ function Results(){
 
         <ResultsBox>
             <div className="result">
-            <div className="textResults">Results: 6</div>
+            <div className="textResults">Results: </div>
             </div>
         </ResultsBox>
     )

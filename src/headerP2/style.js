@@ -1,12 +1,15 @@
 import styled from "styled-components";
+import FlagBackgrounf from "../public/icon/flag.jpg"
 
 
 export const HeaderP2Foto = styled.div`
-    position: relative;
-    width: auto;
-    height: 245px;
+    position: absolute;
+    height: 71.1vh ;
+    width: 100%;
+        background-image: url(${FlagBackgrounf});
 `;
 export const BodyPage2 = styled.div`
+    display: block;
     position: absolute;
     top: 130px;
     left: 75px;

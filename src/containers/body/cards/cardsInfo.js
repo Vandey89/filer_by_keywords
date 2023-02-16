@@ -11,7 +11,7 @@ export const Cards = [{
     name: "Battle for Kyiv",
     date: 'February 25, 2022 - April 2, 2022',
     Typography1: "Kyiv, where the Ukrainian authorities are located, was the main target. An attempt to capture Kyiv ended in defeat and the retreat of Russian troops....",
-    Typography2: "",
+    Typography2: "In the early morning of 2 March, the Ukrainian Air Force claimed it had shot down two Russian Sukhoi Su-35 over Kyiv.[26][75] Later in the morning, Klitschko stated that the Russian army was beginning to surround the city in an attempt to enforce a blockade.[76] Klitschko told Channel 24 that tanks were approaching Kyiv from Belarus and that Ukrainian authorities were inspecting Ukrainian checkpoints for preparedness.[77] Estonian Defence Forces intelligence chief Margo Grosberg estimated that the advancing Russian convoy would arrive to Kyiv's outer suburbs in at least two days, after which they would try to lay siege to the city.[78] Polish president Andrzej Duda said Zelenskyy had told him that Ukrainian forces would not withdraw from Kyiv.[79] Ukrainian general Oleksandr Syrskyi stated in an interview in June that Russian forces had attempted to storm Kyiv through its major highways, so Ukrainian forces set up two rings of forces along the city; an outer circle in the suburbs, and an inner one in downtown Kyiv. The intention was to protect the inner ring from the fighting occurring on the outer ring, and keep Russian forces fighting in the suburbs",
     knopka:  "https://ru.wikipedia.org/wiki/%D0%91%D0%B8%D1%82%D0%B2%D0%B0_%D0%B7%D0%B0_%D0%9A%D0%B8%D0%B5%D0%B2_(2022)"
   },
   {

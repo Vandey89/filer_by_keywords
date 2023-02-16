@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Wrapper = styled.div`
     position: relative;
     width: 1440px;
@@ -16,6 +17,7 @@ export const Wrapper2 = styled.div`
     border-radius: 5px;
 `;
 export const OB = styled.div`
+
     display: grid;
     grid-template-columns: 1fr 1fr;
 `;

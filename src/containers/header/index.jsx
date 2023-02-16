@@ -13,11 +13,14 @@ export default function Header () {
     return (
       <HeaderMain>
         <Vremya> 
-        <h2 class="name" id="name" contenteditable="true" placeholder="Заголовок">
+        <h2>
             War begining :
         </h2>
-        <Moment  date="Tuesday Feb 24 2022 12:59:00:00 GMT-0500"
+        <h3>
+        <Moment  
+        date="Tuesday Feb 24 2022 12:59:00:00 GMT-0500"
                     durationFromNow />
+        </h3>
         </Vremya>
         
         <div className="orb">

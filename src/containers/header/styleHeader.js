@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import gifkaFLAG from "../../public/icon/gifkaFLAG.gif"
 
 
 
 export const HeaderMain = styled.header`
+background-image: (${gifkaFLAG});
+        
     .orb{
         display: grid;
         padding: 50px 765px 1px 75px ;
@@ -25,12 +28,14 @@ export const HeaderMain = styled.header`
     }
 `;
 export const Vremya = styled.div`
+    position: relative;
+    white-space: nowrap;
     top: 50px;
     left: 2500px;
     height: 0px;
-    position: relative;
     width: 220px;
-    color: rgba(0,255,0.9)
+    color: red;
+    
 `;
 
 
