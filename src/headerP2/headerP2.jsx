@@ -12,16 +12,17 @@ export default function DenseAppBar() {
     
       <HeaderP2Foto>
         <div id="link1"  display="none">
-        {open && (<div className="overlay">
+        {open && (
+        <div className="overlay">
         <div className="modal">
           <svg onClick={() => SetOpen(false)}  viewBox="0 0 200 200" >
             
             <title />
             <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
           </svg>
-          
+          <img src="https://thebulletin.org/wp-content/uploads/2022/04/nyt-war-crimes-gif.gif" />
         </div>
-      </div>)}
+        </div>)}
             <BodyPage2> 
               <div className="BodyPage2Text">
                       <div className="titleP2">Russo-Ukrainian War</div>
