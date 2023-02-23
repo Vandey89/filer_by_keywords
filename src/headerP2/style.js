@@ -9,7 +9,7 @@ export const HeaderP2Foto = styled.div`
         background-image: url(${FlagBackgrounf});
 `;
 export const BodyPage2 = styled.div`
-    display: block;
+    display: flex  ;
     position: absolute;
     top: 130px;
     left: 75px;

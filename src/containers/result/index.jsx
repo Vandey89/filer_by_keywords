@@ -1,5 +1,5 @@
 import React from "react";
-import  ResultsBox  from "./style";
+import { ResultsBox } from "./style";
 
 function Results(){
     return(

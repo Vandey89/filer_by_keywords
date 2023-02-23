@@ -2,37 +2,30 @@ import * as React from "react";
 import { HeaderP2Foto,  BodyPage2, StyledButton} from "./style";
 import flag from "../public/icon/mishka.jpg";
 import Button from '@mui/material/Button';
-
-
-function look(elemId) {
-  var elem = document.getElementById(elemId);
-  elem.display === "none" ?
-    elem.style.display = "block" : elem.style.display = "none";
-}
-
-// a {
-//   display: block;
-// }
-
-// .div {
-//   border: 1px solid black;
-//   width: 50px;
-//   height: 50px;
-// }
-// <a onclick="look('link1'); return false;" href="#">Ссылка 1</a>
-// <div id="link1" class="div" style="display: none;">Блок 1</div>
-// <a onclick="look('link2'); return false;" href="#">Ссылка 2</a>
-// <div id="link2" class="div" style="display: none;">Блок 2</div>
+import '../index.scss';
+import { Cards } from "../containers/body/cards/cardsInfo";
 
 export default function DenseAppBar() {
+  const [open, SetOpen] = React.useState(false);
   return (
-  
   <div className="ORB">
+    
       <HeaderP2Foto>
-        <div id="link1" class="div" display="none">
+        <div id="link1"  display="none">
+        {open && (<div className="overlay">
+        <div className="modal">
+          <svg onClick={() => SetOpen(false)}  viewBox="0 0 200 200" >
+            
+            <title />
+            <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
+          </svg>
+          
+        </div>
+      </div>)}
             <BodyPage2> 
               <div className="BodyPage2Text">
                       <div className="titleP2">Russo-Ukrainian War</div>
+                      
                       The 2022 Russian invasion of Ukraine began on the morning of 24 February, when Putin announced a "special military operation" 
                       to "demilitarise and denazify" Ukraine. Minutes later, missiles and airstrikes hit across Ukraine, including Kyiv, shortly 
                       followed by a large ground invasion along multiple fronts. Zelenskyy declared martial law and a general mobilisation of all
@@ -61,10 +54,11 @@ export default function DenseAppBar() {
         <img src={flag} height="245px" width="100%" />
       </HeaderP2Foto>
       <StyledButton>
-          <Button variant="contained" >
-            <a href="https://en.wikipedia.org/wiki/Russo-Ukrainian_War">More Info...</a>
+          <Button variant="contained" onClick={() => SetOpen(true)}>
+            <a >More Info...</a>
           </Button>
        </StyledButton>
+      
   </div>
   
 

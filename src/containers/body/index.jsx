@@ -3,17 +3,6 @@ import { Product } from "./style";
 import {Card, CardContent, CardMedia, Typography, Button, CardActionArea, CardActions} from '@mui/material';
 import tablo from '../../public/icon/calendar.svg';
 import { Cards } from "./cards/cardsInfo";
-import DenseAppBar from "../../headerP2/headerP2";
-import { BodyPage2 } from "../../headerP2/style";
-
-
-
-
-function look(elemId) {
-  var elem = document.getElementById(elemId);
-  elem.style.display === "none" ?
-    elem.style.display = "block" : elem.style.display = "none";
-}
 
 
 export default function ProductBody(){
