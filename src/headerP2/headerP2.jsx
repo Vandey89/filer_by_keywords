@@ -1,32 +1,80 @@
 import * as React from "react";
-import { HeaderP2Foto,  BodyPage2, StyledButton} from "./style";
-import flag from "../public/icon/mishka.jpg";
+import { HeaderP2Foto,  BodyPage2, StyledButton, StyledButton2 } from "./style";
 import Button from '@mui/material/Button';
 import '../index.scss';
-import { Cards } from "../containers/body/cards/cardsInfo";
+import { questions } from "../containers/body/cards/cardsInfo";
+
+
+function Result({correct}) {
+  return (
+    <div className="result">
+      <img src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-192566,msid-95937474/official-says-over-10000-ukrainian-troops-killed-in-war.jpg" />
+      <h2>Вы отгадали {correct} ответа из {questions.length}</h2>
+      <a href='/'>
+      <button>Попробовать снова</button>
+      </a>
+    </div>
+  );
+}
+
+function Game({step, question, onClickVariant}) {
+  const percentage = Math.round(step / questions.length * 100);
+
+  return (
+    <>
+      <div className="progress">
+        <div style={{ width: `${percentage}%` }} className="progress__inner"></div>
+      </div>
+      <h1>{question.title}</h1>
+      <ul>
+        {question.variants.map((text, index) =>(
+          <li onClick={()=> onClickVariant(index)} key={text}>{text}</li>
+        ))}
+      </ul>
+    </>
+  );
+}
 
 export default function DenseAppBar() {
+  const [quizModal, SetquizModal] = React.useState(false);
   const [open, SetOpen] = React.useState(false);
+  const  [step, setStep] = React.useState(0);
+  const [correct, setCorrect] = React.useState(0);
+
+  const question = questions[step];
+  const onClickVariant = (index) => {
+    setStep(step + 1)
+   
+    if(index === question.correct) {
+      setCorrect(correct + 1);
+      } 
+    };
   return (
   <div className="ORB">
-    
       <HeaderP2Foto>
-        <div id="link1"  display="none">
         {open && (
         <div className="overlay">
-        <div className="modal">
-          <svg onClick={() => SetOpen(false)}  viewBox="0 0 200 200" >
-            
-            <title />
-            <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
-          </svg>
-          <img src="https://thebulletin.org/wp-content/uploads/2022/04/nyt-war-crimes-gif.gif" />
-        </div>
-        </div>)}
+          <div className="modal">
+              <svg onClick={() => SetOpen(false)}  viewBox="0 0 200 200" >
+                  <title />
+                  <path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z" />
+              </svg>
+                <img src="https://thebulletin.org/wp-content/uploads/2022/04/nyt-war-crimes-gif.gif" />
+          </div>
+        </div>)};
+          { quizModal &&
+                  (<div className="body">
+                  <div className="App">
+                    {
+                      step != questions.length ? <Game step={step} question={question} 
+                      onClickVariant={onClickVariant}/> : <Result correct={correct}/>
+                    }
+                    {/* <Result /> */}
+                  </div>
+          </div>)}
             <BodyPage2> 
               <div className="BodyPage2Text">
                       <div className="titleP2">Russo-Ukrainian War</div>
-                      
                       The 2022 Russian invasion of Ukraine began on the morning of 24 February, when Putin announced a "special military operation" 
                       to "demilitarise and denazify" Ukraine. Minutes later, missiles and airstrikes hit across Ukraine, including Kyiv, shortly 
                       followed by a large ground invasion along multiple fronts. Zelenskyy declared martial law and a general mobilisation of all
@@ -49,17 +97,16 @@ export default function DenseAppBar() {
                         In the course of the southern counteroffensive, Ukraine retook the city of Kherson in November and Russian forces withdrew to the east bank of the Dnieper River
                         <h3>THE WAR CONTINUES... </h3>
                         </div>
-                  
             </BodyPage2>    
-            </div>   
-        <img src={flag} height="245px" width="100%" />
       </HeaderP2Foto>
       <StyledButton>
-          <Button variant="contained" onClick={() => SetOpen(true)}>
-            <a >More Info...</a>
+          <Button variant="contained"  onClick={() => SetOpen(true)}>
+            <a>War sity picture</a>
           </Button>
        </StyledButton>
-      
+        <StyledButton2>
+        <Button variant="contained" onClick={() => SetquizModal(true)}>What is war  ?</Button>
+        </StyledButton2>
   </div>
   
 

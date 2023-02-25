@@ -59,3 +59,49 @@ export const Cards = [{
     Typography2: "",
     knopka:  "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%B8_%D0%B7%D0%B0_%D0%9B%D0%B8%D0%BC%D0%B0%D0%BD"
   }];
+
+  export const questions = [
+    {
+      title: 'React - это ... ?',
+      variants: ['библиотека', 'фреймворк', 'приложение'],
+      correct: 0,
+    },
+    {
+      title: 'Компонент - это ... ',
+      variants: ['приложение', 'часть приложения или страницы', 'то, что я не знаю что такое'],
+      correct: 1,
+    },
+    {
+      title: 'Что такое JSX?',
+      variants: [
+        'Это простой HTML',
+        'Это функция',
+        'Это тот же HTML, но с возможностью выполнять JS-код',
+      ],
+      correct: 2,
+    },{
+      title: '1',
+      variants: [
+        '11',
+        '12',
+        '13',
+      ],
+      correct: 2,
+    },{
+      title: '2',
+      variants: [
+        '21',
+        '22',
+        '23',
+      ],
+      correct: 2,
+    },{
+      title: '3',
+      variants: [
+        '31',
+        '32',
+        '33',
+      ],
+      correct: 2,
+    },
+  ];

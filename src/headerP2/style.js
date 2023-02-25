@@ -3,7 +3,7 @@ import FlagBackgrounf from "../public/icon/flag.jpg"
 
 
 export const HeaderP2Foto = styled.div`
-    position: absolute;
+    position: relative;
     height: 71.1vh ;
     width: 100%;
         background-image: url(${FlagBackgrounf});
@@ -46,5 +46,12 @@ export const StyledButton = styled.div`
         width: 160px;
         height: 24px;
         left: 118px;
-        top: 1050px;
+        top: 1060px;
+`;
+export const StyledButton2 = styled.div`
+       position: absolute;
+        width: 160px;
+        height: 24px;
+        left: 298px;
+        top: 1060px;
 `;

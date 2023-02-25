@@ -3,7 +3,7 @@ import { Wrapper, Wrapper2, OB } from "./containers/ui/style";
 import Results from "./containers/result";
 import ProductBody from "./containers/body";
 import DenseAppBar from "./headerP2/headerP2";
-
+import React from "react";
 
 
 
@@ -12,6 +12,9 @@ import DenseAppBar from "./headerP2/headerP2";
 
 
 function App() {
+const  [town, SetTown] = React.useState(false);
+
+
   return (
     <OB >
       <Wrapper>
