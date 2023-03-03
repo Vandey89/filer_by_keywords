@@ -62,46 +62,30 @@ export const Cards = [{
 
   export const questions = [
     {
-      title: 'React - это ... ?',
-      variants: ['библиотека', 'фреймворк', 'приложение'],
+      title: 'Which of these cities is occupied?',
+      variants: ['Kyiv', 'Kharkiv', 'Sumy', 'Akhtyrka', 'Severodonetsk', 'Lyman'],
+      correct: 4,
+    },
+    {
+      title: 'Which of these cities was deoccupied? ',
+      variants: ['Kyiv', 'Kharkiv', 'Sumy', 'Akhtyrka', 'Severodonetsk', 'Lyman'],
+      correct: 5,
+    },
+    {
+      title: 'Which of these cities did not let the Russians into Kyiv?', 
+      variants: ['Kyiv', 'Kharkiv', 'Sumy', 'Akhtyrka', 'Severodonetsk', 'Lyman'],
+      correct: 3,
+    },{
+      title: 'Which of these cities is the largest?',
+      variants: ['Kyiv', 'Kharkiv', 'Sumy', 'Akhtyrka', 'Severodonetsk', 'Lyman'],
       correct: 0,
-    },
-    {
-      title: 'Компонент - это ... ',
-      variants: ['приложение', 'часть приложения или страницы', 'то, что я не знаю что такое'],
-      correct: 1,
-    },
-    {
-      title: 'Что такое JSX?',
-      variants: [
-        'Это простой HTML',
-        'Это функция',
-        'Это тот же HTML, но с возможностью выполнять JS-код',
-      ],
-      correct: 2,
     },{
-      title: '1',
-      variants: [
-        '11',
-        '12',
-        '13',
-      ],
-      correct: 2,
+      title: 'What city was the main goal of the Russian soldiers?',
+      variants: ['Kyiv', 'Kharkiv', 'Sumy', 'Akhtyrka', 'Severodonetsk', 'Lyman'],
+      correct: 0,
     },{
-      title: '2',
-      variants: [
-        '21',
-        '22',
-        '23',
-      ],
-      correct: 2,
-    },{
-      title: '3',
-      variants: [
-        '31',
-        '32',
-        '33',
-      ],
+      title: 'Which of these cities lies to the north of the others?',
+      variants: ['Kyiv', 'Kharkiv', 'Sumy', 'Akhtyrka', 'Severodonetsk', 'Lyman'],
       correct: 2,
     },
   ];
