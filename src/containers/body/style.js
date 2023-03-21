@@ -23,6 +23,13 @@ export const Product = styled.div`
       opacity: 0.6;
       padding: 30px 0.1px;
     }
+    .action{
+      position: relative;
+      left: 220px;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+    }
 `;
 
 

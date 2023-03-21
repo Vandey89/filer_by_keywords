@@ -9,7 +9,8 @@ import { Vremya } from "./styleHeader";
 
 //<Moment  src="https://MomentJS.com/downloads/moment-with-locales.js" interval={1000}  />
 
-export default function Header () {
+export default function Header ({ searchValue, onChangeSearchValue }) {
+  console.log(searchValue)
     return (
       <HeaderMain>
         <Vremya> 
@@ -36,6 +37,8 @@ export default function Header () {
                       <SearchIcon /> 
                     </IconButton>
                     <InputBase
+                      value={searchValue}
+                      onChange={onChangeSearchValue}
                       sx={{ ml: 1, flex: 1 }}
                       placeholder="Russian agreshion in Ukraine"
                       inputProps={{ "aria-label": "search google maps" }}

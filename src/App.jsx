@@ -4,6 +4,7 @@ import Results from "./containers/result";
 import ProductBody from "./containers/body";
 import DenseAppBar from "./headerP2/headerP2";
 import React from "react";
+import { Cards } from "./containers/body/cards/cardsInfo";
 
 
 
@@ -12,15 +13,18 @@ import React from "react";
 
 
 function App() {
-const  [town, SetTown] = React.useState(false);
+const [searchValue, SetSearchValue] = React.useState('');
 
+const onChangeSearchValue = (event) => {
+  SetSearchValue(event.target.value);
+}
 
   return (
     <OB >
       <Wrapper>
-      <Header />
+      <Header searchValue={searchValue} onChangeSearchValue={onChangeSearchValue} items={Cards}/>
       <Results />
-      <ProductBody />
+      <ProductBody searchValue={searchValue} onChangeSearchValue={onChangeSearchValue}/>
       </Wrapper>
       <Wrapper2>
         <DenseAppBar />
